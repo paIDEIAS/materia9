@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<link rel="shortcut icon" href="http://findicons.com/files/icons/1799/bathroom/16/duck.png" type="image/ico" />
+<link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet">
+
+<html><title>páMATÉRIA</title><head>
+    <meta charset="UTF-8">    
+    </head><body><style>
+      
+#navbar { font: 900 11px open sans; letter-spacing: 1px; color: #fff; text-transform: uppercase; border-top: 4px solid #fff; padding-top: 10px; padding-bottom: 45px; width: 370px; margin-left: 200px; margin-top: -15px; }
+#navbar a { padding-right: 44px; cursor: pointer; }
+#carrossel { padding: 50px 20px; width: 1200px; }
+#carrossel img { margin: 0px 10px; }
+#carrossel a { cursor: pointer; color: white; font-size: 100px; margin-top: 10px; position: absolute; }
+#pa-home { background-color: #f3f9ff; margin: 15px; }
+#pa-home t { color: #fff; font: 100 130px Open Sans; }
+#pa-home a { text-decoration: none; }
+@keyframes cores {
+0%{ background-color: #f1e573; opacity: 0.3; }
+33%{ background-color: #5cd9ea; opacity: 0.3; } 
+66%{ background-color: #e85d5d; opacity: 0.3; }
+100%{ background-color: #f1e573; opacity: 0.3; } }
+
+
+.mat-capa { margin-bottom: 100px; background: #eee no-repeat top center; width: 100%; padding: 70px 0px; height: 460px; font: 400 13px lato; text-align: left;  }
+.mat-capa p { margin-bottom: -12px; text-indent: 25px; line-height: 140%; }
+.mat-capa l { line-height: 140%; }
+.mat-quote { font: 700 italic 25px playfair display; text-align: left; line-height: 100%; padding: 30px 0px; color: #e85d5d; }
+
+
+#pa-home tit { font: italic bold 50px Playfair Display; text-align: center; display: block;  line-height: 100%; }
+#pa-home tit2 { font: italic bold 25px Playfair Display; text-align: center; display: block;  line-height: 100%;     width: 490px; }
+#pa-home subt { font: 600 11px open sans; text-transform: uppercase; letter-spacing: 1.5px; }
+
+
+    .sp-slideshow { position: relative; margin: 0px auto; width: 1200px; height: 600px; }
+    .sp-content { background: #fff; position: relative; width: 100%;height: 100%;overflow: hidden;}
+    
+    .sp-parallax-bg {background: #f3f9ff; -webkit-background-size: cover;-moz-background-size: cover;background-size: cover;position: absolute;top: 0;left: 0;width: 100%;height: 100%;overflow: hidden;}
+    
+    .sp-slideshow input {position: absolute;bottom: 15px;left: 50%;width: 9px;height: 9px;z-index: 1001;cursor: pointer;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";filter: alpha(opacity=0);opacity: 0;}
+    
+    .sp-slideshow input + label {position: absolute;bottom: 15px;left: 50%;width: 6px;height: 6px;display: block;z-index: 1000;border: 3px solid #fff;border: 3px solid rgba(255,255,255,0.9);-webkit-border-radius: 50%;-moz-border-radius: 50%;border-radius: 50%;-webkit-transition: background-color linear 0.1s;-moz-transition: background-color linear 0.1s;-o-transition: background-color linear 0.1s;-ms-transition: background-color linear 0.1s;transition: background-color linear 0.1s;}
+    .sp-slideshow input:checked + label {background-color: #fff; background-color: rgba(255,255,255,0.9);}
+    
+</style>
+<style>
+    .sp-selector-1, .button-label-1 {margin-left: -36px;}
+    .sp-selector-2, .button-label-2 {margin-left: -18px;}
+    .sp-selector-3, .button-label-3 {margin-left: 0px;}
+    .sp-selector-4, .button-label-4 {margin-left: 18px;}
+    .sp-selector-5, .button-label-5 {margin-left: 36px;}
+    
+    .sp-arrow {position: absolute;top: 50%;width: 28px;height: 37px;margin-top: -19px;display: none;cursor: pointer;z-index: 1000; background: center top transparent url(http://i.imgur.com/hEfN7rx.png) no-repeat;-webkit-transition: opacity linear 0.3s;-moz-transition: opacity linear 0.3s;-o-transition: opacity linear 0.3s;-ms-transition: opacity linear 0.3s;
+    transition: opacity linear 0.3s;}
+    .sp-arrow:hover{opacity: 1;}
+    .sp-arrow:active{margin-top: -18px;}
+    .sp-selector-1:checked ~ .sp-arrow.sp-a2,
+    .sp-selector-2:checked ~ .sp-arrow.sp-a3,
+    .sp-selector-3:checked ~ .sp-arrow.sp-a4,
+    .sp-selector-4:checked ~ .sp-arrow.sp-a5 {right: 15px;display: block;background-position: top right;}
+    .sp-selector-2:checked ~ .sp-arrow.sp-a1,
+    .sp-selector-3:checked ~ .sp-arrow.sp-a2,
+    .sp-selector-4:checked ~ .sp-arrow.sp-a3,
+    .sp-selector-5:checked ~ .sp-arrow.sp-a4 {left: 15px;display: block;background-position: top left;}
+    
+    
+    .sp-slideshow input:checked ~ .sp-content {-webkit-transition: background-position linear 0.6s, background-color linear 0.8s;-moz-transition: background-position linear 0.6s, background-color linear 0.8s;-o-transition: background-position linear 0.6s, background-color linear 0.8s;-ms-transition: background-position linear 0.6s, background-color linear 0.8s;transition: background-position linear 0.6s, background-color linear 0.8s;}
+    
+    .sp-slideshow input:checked ~ .sp-content .sp-parallax-bg {-webkit-transition: background-position linear 0.7s;-moz-transition: background-position linear 0.7s;-o-transition: background-position linear 0.7s;-ms-transition: background-position linear 0.7s;transition: background-position linear 0.7s;}
+    
+    input.sp-selector-1:checked ~ .sp-content {background-position: 0 0;background-color: #727b7f;} 
+    input.sp-selector-2:checked ~ .sp-content {background-position: -100px 0; background-color:#7f7276;} 
+    input.sp-selector-3:checked ~ .sp-content {background-position: -200px 0;background-color: #737f72;} 
+    input.sp-selector-4:checked ~ .sp-content {background-position: -300px 0;background-color: #79727f;} 
+    input.sp-selector-5:checked ~ .sp-content {background-position: -400px 0;background-color: #7d7f72;} 
+    
+    input.sp-selector-1:checked ~ .sp-content .sp-parallax-bg {background-position: 0 0;} 
+    input.sp-selector-2:checked ~ .sp-content .sp-parallax-bg {background-position: 0 0;} 
+    input.sp-selector-3:checked ~ .sp-content .sp-parallax-bg {background-position: 0 0;} 
+    input.sp-selector-4:checked ~ .sp-content .sp-parallax-bg {background-position: 0 0;} 
+    input.sp-selector-5:checked ~ .sp-content .sp-parallax-bg {background-position: 0 0;} 
+    
+    .sp-slider { position: relative;left: 0; width: 500%;height: 100%;list-style: none; margin: 0;padding: 0;-webkit-transition: left ease-in 0.8s; -moz-transition: left ease-in 0.8s; -o-transition: left ease-in 0.8s; -ms-transition: left ease-in 0.8s;transition: left ease-in 0.8s; }
+    
+    .sp-slider > li {
+    height:100%;
+    padding:0 60px;
+    width: 20%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    float:left;
+    text-align:center;
+    opacity:0.4; 
+    -webkit-transition:opacity ease-in 0.4s 0.8s;
+    -moz-transition:opacity ease-in 0.4s 0.8s;
+    -o-transition:opacity ease-in 0.4s 0.8s;
+    -ms-transition:opacity ease-in 0.4s 0.8s;
+    transition:opacity ease-in 0.4s 0.8s; } 
+    
+    .sp-slider > li img{-webkit-box-sizing: border-box;-moz-box-sizing: border-box;-o-box-sizing: border-box;-ms-box-sizing: border-box;box-sizing: border-box;display: block;margin: 0 auto;padding: 40px 0 50px 0;max-height: 100%;max-width: 100%;}
+    
+    
+    input.sp-selector-1:checked ~ .sp-content .sp-slider {left: 0;}
+    input.sp-selector-2:checked ~ .sp-content .sp-slider {left: -100%;}
+    input.sp-selector-3:checked ~ .sp-content .sp-slider {left: -200%;}
+    input.sp-selector-4:checked ~ .sp-content .sp-slider {left: -300%;}
+    input.sp-selector-5:checked ~ .sp-content .sp-slider {left: -400%;}
+    
+    
+    input.sp-selector-1:checked ~ .sp-content .sp-slider > li:first-child,
+    input.sp-selector-2:checked ~ .sp-content .sp-slider > li:nth-child(2),
+    input.sp-selector-3:checked ~ .sp-content .sp-slider > li:nth-child(3),
+    input.sp-selector-4:checked ~ .sp-content .sp-slider > li:nth-child(4),
+    input.sp-selector-5:checked ~ .sp-content .sp-slider > li:nth-child(5){ opacity: 1; }
+    
+</style>
+<center>
+<div style="background-color: #fff; width: 100%; height: 20px; position: fixed; top: 0; z-index: 99999999;"></div>
+<div style="background-color: #fff; width: 100%; height: 20px; position: fixed; bottom: 0; z-index: 99999999;"></div>
+<div id="pa-home">
+
+      <div style="background: #f1e573; padding-top: 70px; padding-bottom: 50px;">
+      <a href="https://paideias.github.io/home/"><t>PÁ IDEIAS</t></a>
+            <div id="navbar"><a>comprar</a><a>edições</a><a>favoritos</a><a>contato</a></div>
+      <div id="carrossel">
+      <a style="margin-left: -80px;">❮</a>
+      
+        <img src="http://i.imgur.com/jLdwSI1.png" />
+        <img src="http://i.imgur.com/jLdwSI1.png" />
+        <img src="http://i.imgur.com/jLdwSI1.png" />
+        <img src="http://i.imgur.com/jLdwSI1.png" />
+        <img src="http://i.imgur.com/jLdwSI1.png" />
+        <img src="http://i.imgur.com/jLdwSI1.png" />
+        
+      <a style="margin-left: 25px;">❯</a>  
+      </div></div>
+
+  
+
+
+
+
+
+
+<div class="sp-slideshow">
+            
+   <input id="button-1" type="radio" name="radio-set" class="sp-selector-1" checked="checked" />
+   <label for="button-1" class="button-label-1"></label>
+    
+   <input id="button-2" type="radio" name="radio-set" class="sp-selector-2" />
+   <label for="button-2" class="button-label-2"></label>
+   
+      <input id="button-3" type="radio" name="radio-set" class="sp-selector-3" />
+   <label for="button-3" class="button-label-3"></label>
+    
+    
+    
+   <label for="button-1" class="sp-arrow sp-a1"></label>
+   <label for="button-2" class="sp-arrow sp-a2"></label>
+   <label for="button-3" class="sp-arrow sp-a3"></label>
+
+    
+   <div class="sp-content">
+       <div class="sp-parallax-bg"></div>
+       <ul class="sp-slider clearfix">
+           <li>
+           
+           
+            
+          <div class="mat-capa" style="background: #fff left center url(http://i.imgur.com/Z4gKge5.png) no-repeat;">
+    <div style="padding: 0px 50px; margin-top: -17px; width: 450px; float: right;">
+<p>Diante de todas as informações, ferramentas e suportes que a tecnologias nos proporcionam hoje, a sociedade se apresenta em meio a uma grande revolução informacional, desenvolvendo no homem sensibilidades corporais e relações sociais total- mente diferente das apresentadas nos séculos passados. A era digital em que vivemos faz com que muitos artistas iniciem um interessante diálogo com os meios virtuais, necessitando, desta maneira, das interfaces e redes como item principal para o desenvolvimento de seus trabalhos dentro dessa grande esfera virtual não totalizada em que vivemos.</p> 
+<p>O universo da arte sofre mudanças constantes, sempre fazendo uso das técnicas e tecnologias disponíveis. Com o surgimento da era digital isto se torna mais evidente, pois as linguagens estão sendo trabalhadas através de um hibridismo.
+Com o surgimento da tecnologia chamada <i>wireless</i>, conceitos como arte móvel (<i>mobile art</i>) vão aparecendo e a cada dia se aprimorando. <span style="letter-spacing: -.5px;">Uma das questões que se faz premente é se a arte e as tecnologias contemporâneas,</span>
+levando-se em conta o alto grau de virtualização que as mesmas podem atingir, coabitarão um mesmo coabitarão espaço reflexivo dentro dos processos criativos dos artistas. Outra questão a responder é que tipo de resultado se apresenta para o público de arte, que espécies de sensibilidades resultam nos trabalhos dos artistas que fazem uso das novas tecnologias como suportes e ferramentas em seus processos criativos.</p>
+  <p>A grande tendência artística contemporânea é a utilização das mídias móveis, tais como: celular, palm, o GPS, e os computadores portáteis. Assim, consideramos esses dispositivos móveis como sendo uma nova forma de produção, atualização e visualização das obras de arte, tendo como objetivo estimular os artistas e usuários amantes de tecnologias a terem novas perspectivas na construção de modelos híbridos e suas ampliações.</p>
+</div>
+<div style="padding: 40px 40px 0px 0px; height: 150px; width: 440px; text-align: right; color:white; float: right;">
+    <tit style="text-align: center;">Tecnologia e arte digital: um estudo sobre imagens virtuais e dispositivos móveis (mídias móveis)</tit><br><BR><BR>
+      <subt style="margin-right: -20px;">HIVO MAURICIO NAVARRO FABRÍCIO</subt><br>
+      <subt style="margin-right: -20px;">ROGÉRIO ZANETTI GOMES</subt><br>
+      <subt style="margin-right: -20px;">MARCELO SILVIO LOPES</subt>
+    </div>
+</div>
+           
+           
+           
+           
+           
+  
+</li>
+<li>
+             
+             
+
+             
+              <div class="mat-capa" style="background: right #fff;">
+  <div style="padding: 0px 20px 0px 60px; margin-top: -20px; width: 225px; float: left;"><br><tit2>Arte e Tecnologia:<br> Transformação Cultural</tit2><br><br><br>
+
+  <p>A revolução tecnológica apodera-se de todas as atividades da sociedade. Tudo está voltado para as novas tecnologias, todas as áreas do saber:
+  humanas, exatas, biológicas, sendo empregadas na indústria, ciência, educação, entre outros, assumindo uma relação direta com a vida, fazendo com que os artistas repensem a condição humana.</p>
+<p>No inicio do século era perceptível a entrada das novas tecnologias dentro dos lares, locais de trabalho, educação, tendo por conseqüência um ambiente de tecnologias semânticas,
+cognitivas, que não se comportavam como ferramentas e sim como forma do ambiente, isto é, fazendo parte integral de algo que fosse necessário para o processo, sendo assim essencial
+(VILLARES, 2008). Podemos observar <font color="white">cultura</font><p>
+</div>
+ <div style="padding: 0px; margin-top: 108px; width: 225px; float: left;">
+<l>também que até a metade do século 
+XIX apresentavam-se dois tipos de cultura nas sociedades ocidentais: a cultura popular, produzida pela grande massa dominada e a cultura erudita, das elites dominantes.</l>
+<p style="margin-top: 0px; letter-spacing: .1px;">No entanto, se não tivéssemos as grandes tecnologias ao nosso alcance nunca chegaríamos a essa transformação cultural, onde o impacto das consequências desta mudança permite que a informação possa ser referida como revolução digital. Se reunirmos cultura e ciência que foram cindidas pela sociedade industrial, a cultura digital se apresentará como digitalização crescente da produção simbólica da humanidade, imbricada entre espaço e ciberespaço, dentro das redes informacionais.</p>
+</div>
+
+
+ <div style="padding: 0px 150px; margin-top: -20px; width: 250px; float: left;"><br><tit2 style="width: 250px;">Cultura digital e Arte<br></tit2><br>
+<p style="margin-top: 15px;">Concebendo as técnicas e tecnologias como próteses, como extensões do corpo (MCLUHAN, 2007) e que têm por função receber dados do mundo sensível e agir sobre um contexto, deduz-se que técnicas e tecnologias obedecem ao princípio de otimização de desempenho do corpo perante o mundo. Pode- mos considerar técnica como um conjunto de procedimentos necessários para realizar determinada atividade, a organização de informações com determinado objetivo dentro de um processo de trabalho onde o homem controla as forças da natureza com objetivos próprios. <i>Tecnologia</i>
+pode ser considerada como o saber que integra processos aplicados dentro de um contexto organizacional do trabalho, objetivando fins específicos. Por >exemplo, um lápis, um martelo, são ferramentas técnicas, já a máquina fotográfica, que pode ser concebida
+como um objeto técnico que agrega um saber humano, a ótica, pode ser considerada uma máquina tecnológica.</p>
+  
+</div>
+
+             
+             
+             
+           </li><li>
+           
+           
+            <div class="mat-capa" style="background: right #fff;">
+            <div style="width: 1080px; height: 230px; display: block; margin-top: -20px;">
+  <div style="padding-left: 60px; margin-top: -15px; width: 470px; float: left;">
+<p>Para McLuhan (2007) “o meio é a mensagem”, os meios não condicionam seu público pelo que informam, mas pela maneira como informam, a mudança de percepção ocorre devido ao meio e não ao seu conteúdo, ou seja, a mensagem de qualquer meio ou veículo é a mudança de padrão que este meio provoca na sociedade, considerando-se que é o meio que rege a forma e a dimensão dos atos e associações humanas. Instrumentos técnicos como extensões do corpo agregariam implicações psíquicas e sociais e, conseqüentemente, artísticas.</p>
+<p>O homem e suas extensões são um sistema inter-relacionado. O ser humano está intimamente imbricado com suas coisas, sua casa, sua cidade, sua tecnologia (HALL, 2005).
+<span style="letter-spacing: -.1px;">Por isso necessitamos estudar os tipos de extensões criados, as novas</span><p>
+</div>
+
+ <div style="padding-left: 20px; margin-top: -2px; width: 470px; float: left;">
+<l> tecnologias, porque o relacionamento do homem com suas extensões é uma continuação e uma forma especializada
+do relacionamento dos organismos com seu meio ambiente, e quando um processo
+se amplia a evolução se acelera tão rapidamente que é possível que a extensão assuma o controle. Para Lévy.</l>
+<p style="margin-top: 0px;">Temos, portanto, o telefone para a audição, a televisão para a visão, os sistemas de telemanipulações para o tato e a inte- ração sensório-motora, todos esses dispositivos virtualizan- do os sentidos e organizando a utilização coletiva dos órgãos virtualizados. Desta maneira, as pessoas que vêem o mesmo programa de televisão compartilham as mesmas imagens, si- multaneamente; uma passagem da cultura material para uma cultura imaterial.
+</p></div></div>
+
+    <div style="width: 1080px; display: block; margin-top: -20px;">
+ <div style="padding: 0px 20px 0px 60px; margin-top: 0px; width: 225px; float: left;"><tit2 style="text-align: left; width: 400px;">Interatividade e arte</tit2>
+
+  <p style="letter-spacing: -.3px;">Os artistas que estão conectados a centros avançados de pesquisa percebem a necessidade de conhecer e dominar novos meios tecnológicos de produção e reprodução das artes,
+  levando-se em conta que o cenário artístico está dominado pela arte da participação e da interação. Discute-se o fim da arte repre- sentativa e o domínio de uma arte interativa. 
+  Popper (1983) escreve que “arte tecnológica” faz referência a uma relação entre o espectador e uma obra de arte aberta já existente, na qual o termo “interação” implica um jogo de duas vias</p>
+  
+  </div> <div style="padding: 0px 20px 0px 0px; margin-top: 38px; width: 225px; float: left;">
+  <l style="letter-spacing: -.2px;">  entre um indivíduo e um sistema de inteligência artificial. Desta maneira, pensar em interatividade dentro da arte é relacionar o fruidor artístico como co-autor da obra. Para Lévy 
+  (1999, p. 79), “O termo “interatividade” em geral ressalta a participação ativa de beneficiário de uma transação de informação. De fato, seria trivial mostrar que um receptor de informação, a menos que esteja morto,nunca é passivo”.
+  Plaza (1990, p.17) também destaca que “A interatividade como relação recíproca entre usuários e interfaces </l>
+  
+   </div> <div style="padding: 0px 20px 0px 0px; margin-top: 38px; width: 225px; float: left;">
+ <l span style="letter-spacing: -.2px;">  computacionais inteligentes, suscitada pelo artista, permite uma comunicação criadora fundada nos princípios da sinergia, colaboração construtiva, crítica e inovadoras”.</l>
+  <p style="margin-top: 0px; letter-spacing: -.2px;">Assim, a questão de arte e tecnologia se resume a uma passagem da cultura material para uma cultura imaterial. Própria da arte tecnológica, artistas trocam artefatos e 
+  ferramentas por dispositivos múltiplos eletrônicos, celular, <i>smartphones</i>, computadores, satélites, redes,  entre outros que possibilitam cada vez mais comunicação</p>
+</div>
+  
+   </div> <div style="padding: 0px 20px 0px 0px; margin-top: 38px; width: 225px; float: left;">
+ <l>  e a multiplicação da arte. Embora seja algo novo entre os profissionais e artistas, há muito mais dispositivos, principalmente os de rede, já sendo utilizados em diversos espaços como suportes artísticos. Segundo Machado (2001, p. 24), “Com as formas tradicionais de arte entrando em fase de esgotamento, a confluência da arte com a tecnologia representa um campo de possibilidades e de energia criativa que poderá resultar proximamente numa revolução no conceito e na prática da arte”.</l>
+  
+</div>  
+</div>
+          
+           
+           
+           
+           
+           
+  
+</li>
+       </ul>
+   </div>     
+</div>
+
+
+
+
+
+<div style="-webkit-animation: cores 10s linear infinite; padding: 10px; color: #fff; color: black; font: 700 9px open sans;">
+  SE PÁ CÊ VOLTA E A GENTE TROCA UMA IDEIA
+</div>
+
+
+  	</div></center></body>
+	</html>
